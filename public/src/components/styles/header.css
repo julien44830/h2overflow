@@ -1,0 +1,165 @@
+header {
+  margin-left: -25px;
+  width: 20vw;
+  height: 150px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.h2o {
+  display: inline;
+  top: 40px;
+  position: relative;
+}
+
+.earth-3D {
+  width: 100%;
+}
+
+canvas {
+  position: relative;
+  left: 0px;
+  max-width: 250px;
+  max-height: 125px;
+}
+
+.canvas-animate {
+  transition-timing-function: ease-in-out;
+  animation-delay: 2s;
+  animation: 2000ms earth-transition cubic-bezier(0.73, 0.18, 0.29, 0.96);
+}
+
+.h1 {
+  position: relative;
+  left: -60px;
+  z-index: 1;
+  font-family: "cabin", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 5px;
+  animation: 1000ms aparition-h1 ease-in-out;
+  transition: 2s;
+}
+
+/****************************header-home*****************************************/
+.header-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.h2o-home {
+  display: inline;
+  top: 20px;
+  position: relative;
+}
+.earth-3D-home {
+  width: 100%;
+  z-index: -5;
+  width: 90vw;
+  height: 90vh;
+  left: 800px;
+  top: 400px;
+}
+
+.canvas-home {
+  z-index: 0;
+  position: relative;
+  /* left: -470px; */
+  max-height: 90vh;
+  max-width: 90vw;
+  transform: scale(0);
+  overflow-x: hidden;
+}
+
+.canvas-animate-home {
+  transition-timing-function: ease-in-out;
+  animation-delay: 2s;
+  animation: 3500ms earth-appearance cubic-bezier(0.73, 0.18, 0.29, 0.96);
+  transform: scale(1) rotate(-33deg);
+}
+
+.h1-home {
+  position: relative;
+  z-index: 1;
+  font-family: "cabin", sans-serif;
+  font-size: 6rem;
+  font-weight: 800;
+  letter-spacing: 10px;
+  animation: 1000ms aparition-h1 ease-in-out;
+  top: -20px;
+  left: 6rem;
+  transition: 2s;
+}
+
+@keyframes earth-appearance {
+  0% {
+    transform: scale(0) translateX(-200%);
+  }
+
+  30% {
+    transform: scale(0) translateX(+100%);
+    z-index: 1000;
+  }
+
+  100% {
+    transform: scale(1) translateX(0%) rotate(-33deg);
+    z-index: -1;
+  }
+}
+
+@keyframes aparition-h1 {
+  0% {
+    transform: translatey(-200%);
+  }
+
+  100% {
+    transform: translatey(0%);
+  }
+}
+
+/*******************effet de transition***********************/
+
+.transition-out {
+  animation: 3500ms earth-transition-out cubic-bezier(0.73, 0.18, 0.29, 0.96);
+}
+
+@keyframes earth-transition-out {
+  0% {
+    transform: translate(-200%);
+    z-index: 1000;
+  }
+
+  100% {
+    transform: translate(+200%);
+  }
+}
+
+.transition {
+  animation: 3500ms earth-transition cubic-bezier(0.73, 0.18, 0.29, 0.96);
+}
+
+@keyframes earth-transition {
+  0% {
+    transform: translate(-200%);
+    z-index: 1000;
+  }
+
+  100% {
+    transform: scale(1);
+    z-index: -1;
+  }
+}
+
+@keyframes aparition-h1 {
+  0% {
+    transform: translatey(-200%);
+  }
+
+  100% {
+    transform: translatey(0%);
+  }
+}
