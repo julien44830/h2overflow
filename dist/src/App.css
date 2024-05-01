@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.svg-spinner {
+  width: 100vw;
+  height: 100vh;
+  z-index: 11000;
+}
+
+.svg-spinner-composant {
+  width: 445px;
+
+  /* !a ajuster en fonction deu footer */
+  height: 630px;
+}
