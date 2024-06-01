@@ -6,12 +6,16 @@
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  /* align-items: end; */
 }
 
 .legend-card {
   font-family: "figtree", sans-serif;
-  padding-right: 16px;
+  /* padding-right: 16px; */
+  margin-left: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: left;
 }
 
 /* CSS Box level */
