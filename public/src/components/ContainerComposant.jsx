@@ -48,12 +48,12 @@ function ContainerComposant({ isLoadingMap, codeBss, dataMap }) {
       <Groundwatercard
         nappeProfondeur={chroniquesData.data[0].profondeur_nappe}
         investigationNappe={newBss.profondeur_investigation}
+        dateFin={newBss.date_fin_mesure}
       />
       <NapeHome
         ville={newBss.nom_commune}
         departement={newBss.nom_departement}
         dateDebut={newBss.date_debut_mesure}
-        dateFin={newBss.date_fin_mesure}
         profondeur={newBss.profondeur_investigation}
         nomNappe={newBss.libelle_pe}
       />

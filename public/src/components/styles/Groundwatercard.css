@@ -6,12 +6,23 @@
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  /* align-items: end; */
+  justify-content: space-between;
 }
 
 .legend-card {
   font-family: "figtree", sans-serif;
-  padding-right: 16px;
+  /* padding-right: 16px; */
+  margin-left: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.text-top-groundwater {
+  display: inline-flex;
+  justify-content: space-between;
+  margin-bottom: -5px;
 }
 
 /* CSS Box level */
