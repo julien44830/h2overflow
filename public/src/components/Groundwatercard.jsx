@@ -15,8 +15,10 @@ function Groundwatercard({ nappeProfondeur, investigationNappe, dateFin }) {
 
   return (
     <div className="card-container">
-      <p className="legend-card">
-        Taux de remplissage</p>
+      <div className="legend-card text-top-groundwater">
+        <p>Taux de remplissage</p>
+        <p>Dernière mesure : {dateFin}</p>
+      </div>
       <div className="card-visual-level">
         <div className="percentage-box">
           <p className="percentage-text">{percentage}%</p>
@@ -29,9 +31,7 @@ function Groundwatercard({ nappeProfondeur, investigationNappe, dateFin }) {
           alt="water level"
         />
       </div>
-      <p className="legend-card">
-        Dernière mesure : {dateFin}
-      </p>
+
     </div>
   );
 }
