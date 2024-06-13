@@ -56,6 +56,7 @@ canvas {
   top: 20px;
   position: relative;
 }
+
 .earth-3D-home {
   width: 100%;
   z-index: -5;
@@ -162,4 +163,22 @@ canvas {
   100% {
     transform: translatey(0%);
   }
+}
+
+@media screen and (max-width: 550px) {
+
+  .h1-home {
+    position: static;
+    font-size: larger;
+    letter-spacing: 5px;
+  }
+
+  .h2o {
+    top: 10px
+  }
+
+  .header-home {
+    padding-top: 0;
+  }
+
 }

@@ -15,6 +15,44 @@
 .svg-spinner-composant {
   width: 445px;
 
-  /* !a ajuster en fonction deu footer */
+  /* !a ajuster en fonction du footer */
   height: 630px;
+}
+
+.Welcome_Mobile {
+  display: none;
+}
+
+@media screen and (max-width: 550px) {
+
+  .Welcome_Mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Welcome_Mobile_card {
+    position: sticky;
+    /* margin: auto; */
+    margin: 15px;
+    justify-content: center;
+    align-items: center;
+    /* height: 35vh;
+    width: 60vw; */
+    box-sizing: border-box;
+    background-color: aliceblue;
+    border-radius: 12px;
+    z-index: 2;
+    box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.29);
+  }
+
+  .Welcome_Mobile_card_text {
+    /* justify-content: center;
+    align-items: center; */
+    text-align: center;
+    font-weight: 550;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
